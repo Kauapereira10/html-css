@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #5BCC8C;
+}
+
+header.cor02 {
+    background-color: #5BCC8C;
+}
+
+header {
+    padding: 0px 10px;
+    background: linear-gradient(to top, #1B623A, #2A9659, #2caf67, #5BCC8C);
+}
+
+header h1 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+}
+
+header p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+
+main.main1 {
+    background-color: aliceblue;
+    width: 1000px; 
+    padding: 50px;
+    margin: auto;
+   
+}
+
+main div.video {
+    background-color: #1B623A;
+    position: relative;
+    height: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+}
+
+main.main3 {
+    background-color: aliceblue;
+    width: 1000px; 
+    padding: 50px;
+    margin: auto;
+}
+
+main.main3 > section > aside > ul.lis01 {
+    list-style-position: outside;
+    list-style-type: none; /* Remove os marcadores padrão */
+    padding: ; /* Remove o padding padrão */
+
+}
+
+main.main3 > section > aside > ul.lis02 {
+    list-style-position: inside;
+    list-style-type: none; /* Remove os marcadores padrão */
+    padding: ; /* Remove o padding padrão */
+
+
+}
+
+main.main3 > article > div > li {
+    margin-right: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: "iDroid", sans-serif;
+    
+}
+
+p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+. {
+    width: 80%; /* Define a largura do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+    border: 1px; /* Apenas para visualização */
+}
+
+img {
+    width: 100%; /* A imagem ocupa 100% da largura do contêiner */
+    height: auto; /* A altura é ajustada automaticamente */
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}

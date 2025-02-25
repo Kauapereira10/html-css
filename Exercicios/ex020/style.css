@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* SELETORES PERSONALIZADOS
+    #   = id
+    .   = class
+    :   = pseudo-class
+    ::  = pseudo-element
+    >   = children
+*/
+
+div {
+    display: inline-block;
+    background-color: rgb(167, 174, 180);
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+div:hover {
+    background-color: rgb(9, 121, 9);
+}
+
+div > p {
+    display: none;
+
+}
+
+div:hover > p {
+    display: block;
+    color: black;
+    background-color: rgba(28, 28, 204, 0.89);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(52, 52, 250);   
+    font-weight: bolder;
+}
+/* 
+    a pseudo-classe :visited é útil para melhorar a experiência do usuário, permitindo que ele identifique facilmente quais páginas já foram acessadas.
+*/
+a:visited {
+    color: blue;
+} 
+/* 
+    A pseudo-classe :hover é utilizada em CSS para aplicar estilos a um elemento quando o mouse do usuário está sobre ele.
+*/
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+/* 
+A pseudo-classe :active é utilizada em CSS para aplicar estilos a um elemento no momento em que ele está sendo ativado pelo usuário, geralmente durante o clique.
+*/
+a:active {
+    color: black;
+}
+
+a::before {
+    content: '>';
+    font-weight: 100;
+    
+}
+
+a::after {
+    content: '<';
+}

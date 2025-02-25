@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Background Fixado</title>
+    <style>
+        body {
+            margin: 0;
+            height: 2000px; /* Para permitir rolagem */
+        }
+        .background-fixo {
+            background-image: url('sua-imagem.jpg');
+            background-size: cover; /* Para cobrir todo o elemento */
+            background-attachment: fixed; /* Fundo fixo */
+            height: 100vh; /* Altura da janela de visualização */
+            color: rgb(19, 10, 10);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-fixo">
+        <h1>Fundo Fixo</h1>
+        <p>O fundo permanece fixo enquanto você rola a página.</p>
+    </div>
+</body>
+</html>
