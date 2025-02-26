@@ -9,23 +9,33 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
 
 body {
-    background: linear-gradient(to bottom, #03258C, #021F59, #011826);
+    min-width: 260px;
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
 }
 
-main {
-    margin: auto;
-    margin-bottom: 1px;
-    padding: 143.50px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+.main {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+div img {
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.438);
 }
 
 img {
+    position: absolute; /* Para posicionar o texto sobre a imagem */
+    top:20%; /* Centraliza verticalmente */
+    left: 8%; /* Centraliza horizontalmente */
     width: 300px;
     height: 300px;
     border-radius: 17px;
@@ -34,10 +44,10 @@ img {
 
 div h1 {
     position: absolute; /* Para posicionar o texto sobre a imagem */
-    top: 50%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
+    top: 41%; /* Centraliza verticalmente */
+    left: 39%; /* Centraliza horizontalmente */
     transform: translate(-75.95%, -500%); /* Ajusta a posição para o centro exato */
-    color: rgb(255, 255, 255); /* Cor do texto */
+    color: rgb(2, 1, 1); /* Cor do texto */
     font-size: 20px; /* Tamanho da fonte */
     text-align: center; /* Centraliza o texto */
     text-transform: uppercase;
@@ -46,12 +56,20 @@ div h1 {
 
 div p {
     position: absolute; /* Para posicionar o texto sobre a imagem */
-    top: 50%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
+    top: 45%; /* Centraliza verticalmente */
+    left: 41%; /* Centraliza horizontalmente */
     transform: translate(-10%, -60%); /* Ajusta a posição para o centro exato */
-    color: rgb(255, 255, 255); /* Cor do texto */
+    color: rgb(0, 0, 0); /* Cor do texto */
     font-size: 20px; /* Tamanho da fonte */
     text-align: center; /* Centraliza o texto */
     text-shadow: 1px 1px 1px black;
     text-align: justify;
+}
+
+button {
+    color: black;
+    background-color: blue;
+    display: flex-end;
+    justify-content: center;
+    
 }
