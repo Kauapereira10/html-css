@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        /* Estilo para o contêiner principal */
+#container {
+    /* Define uma imagem de fundo para o contêiner */
+    background-image: url('imagens/target001.png');
+    /* Ajusta a imagem de fundo para cobrir todo o contêiner */
+    background-size: 100% 100%;
+
+    /* Define a posição do contêiner como relativa, permitindo que elementos filhos com posição absoluta sejam posicionados em relação a ele */
+    position: relative;
+    /* Define a altura do contêiner como 96% da altura da viewport */
+    height: 96vh;
+    /* Adiciona um preenchimento interno de 10 pixels */
+    padding: 10px;
+    /* Define a cor de fundo como roxa */
+    background-color: purple;
+}
+
+/* Estilo para o conteúdo dentro do contêiner */
+#conteudo {
+    /* Define uma imagem de fundo para o conteúdo */
+    background-image: url('imagens/target001.png');
+    /* Ajusta a imagem de fundo para cobrir todo o conteúdo */
+    background-size: 100% 100%;
+
+    /* Define a altura do conteúdo como 200 pixels */
+    height: 200px;
+    /* Define a largura do conteúdo como 400 pixels */
+    width: 400px;
+    /* Define a cor de fundo como amarela */
+    background-color: yellow;
+
+    /* Define a posição do conteúdo como absoluta, permitindo que ele seja posicionado em relação ao contêiner pai */
+    position: absolute;
+    /* Posiciona o conteúdo no centro horizontal do contêiner */
+    left: 50%;
+    /* Posiciona o conteúdo no centro vertical do contêiner */
+    top: 50%;
+
+    /* Usa a transformação para centralizar o conteúdo, movendo-o para cima e para a esquerda pela metade de sua própria largura e altura */
+    transform: translate(-50%, -50%);
+}
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
