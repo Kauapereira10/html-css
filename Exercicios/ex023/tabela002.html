@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -26,6 +27,11 @@
             padding: 10px;
             background-color: lightgray;
         }
+        
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+        }
 
         thead, tfoot {
             background-color: #383838;
@@ -34,6 +40,17 @@
 
         thead > tr > th {
             background-color: #383838;
+        }
+
+        /* 
+        odd - impar
+        2n - pintar todas pares
+        */
+        tbody > tr:nth-child(odd) { /*odd - impar*/
+            background-color: rgb(255, 255, 255);
+        }
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: aquamarine;
         }
 
         td.num {
@@ -179,5 +196,9 @@
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dicta autem assumenda voluptas enim atque nobis consectetur fugit beatae incidunt? Nostrum similique sunt suscipit dicta architecto, impedit excepturi facere blanditiis.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi mollitia corporis cupiditate totam consectetur assumenda rerum id voluptatibus dolorum? Repellat odit unde beatae adipisci suscipit error nisi, ab neque illum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita voluptates dolore sed quod tenetur autem rerum harum quam cum consequatur. Quisquam corrupti necessitatibus perspiciatis ab aperiam asperiores assumenda recusandae ducimus. lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quam commodi perspiciatis assumenda quidem laboriosam sed nobis, soluta, molestiae quibusdam, magnam voluptas ipsum libero? Vero sequi illo rerum provident blanditiis?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dicta autem assumenda voluptas enim atque nobis consectetur fugit beatae incidunt? Nostrum similique sunt suscipit dicta architecto, impedit excepturi facere blanditiis.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi mollitia corporis cupiditate totam consectetur assumenda rerum id voluptatibus dolorum? Repellat odit unde beatae adipisci suscipit error nisi, ab neque illum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita voluptates dolore sed quod tenetur autem rerum harum quam cum consequatur. Quisquam corrupti necessitatibus perspiciatis ab aperiam asperiores assumenda recusandae ducimus. lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quam commodi perspiciatis assumenda quidem laboriosam sed nobis, soluta, molestiae quibusdam, magnam voluptas ipsum libero? Vero sequi illo rerum provident blanditiis?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dicta autem assumenda voluptas enim atque nobis consectetur fugit beatae incidunt? Nostrum similique sunt suscipit dicta architecto, impedit excepturi facere blanditiis.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi mollitia corporis cupiditate totam consectetur assumenda rerum id voluptatibus dolorum? Repellat odit unde beatae adipisci suscipit error nisi, ab neque illum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita voluptates dolore sed quod tenetur autem rerum harum quam cum consequatur. Quisquam corrupti necessitatibus perspiciatis ab aperiam asperiores assumenda recusandae ducimus. lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quam commodi perspiciatis assumenda quidem laboriosam sed nobis, soluta, molestiae quibusdam, magnam voluptas ipsum libero? Vero sequi illo rerum provident blanditiis?</p>
 </body>
 </html>
